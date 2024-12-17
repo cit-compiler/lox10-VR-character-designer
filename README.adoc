@@ -173,7 +173,34 @@ java com.craftinginterpreters.lox.Lox <プログラム>
 
 [source,console]
 ----
-ここに、Loxを実行したときのコマンドライン、その動作結果をテキストで貼り付ける。
+C:\Users\horikawa kazuma\craftinginterpreters\java\lox01-VR-character-designer\codes>java com.craftinginterpreters.lox.Lox
+> (1+2)*(4-5)/(8*9)-(6/5)
+(- (/ (* (group (+ 1.0 2.0)) (group (- 4.0 5.0))) (group (* 8.0 9.0))) (group (/ 6.0 5.0)))
+LEFT_PAREN ( null
+NUMBER 1 1.0
+PLUS + null
+NUMBER 2 2.0
+RIGHT_PAREN ) null
+STAR * null
+LEFT_PAREN ( null
+NUMBER 4 4.0
+MINUS - null
+NUMBER 5 5.0
+RIGHT_PAREN ) null
+SLASH / null
+LEFT_PAREN ( null
+NUMBER 8 8.0
+STAR * null
+NUMBER 9 9.0
+RIGHT_PAREN ) null
+MINUS - null
+LEFT_PAREN ( null
+NUMBER 6 6.0
+SLASH / null
+NUMBER 5 5.0
+RIGHT_PAREN ) null
+EOF  null
+>
 ----
 
 作成できたら、一度「lox01」をコミットしなさい。
